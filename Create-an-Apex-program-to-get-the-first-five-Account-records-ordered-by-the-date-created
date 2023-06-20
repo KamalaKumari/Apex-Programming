@@ -1,3 +1,7 @@
+/*This Class gets the first five Account records ordered by the date created. It then updates the description field to say that this is a “Heritage Account,” 
+meaning accounts that are older than other accounts.    -- Quick Start: Apex Module*/
+
+
 public class OlderAccountsCls {
     public static void updateOlderAccounts(){
         //Get the 5 oldest accounts
