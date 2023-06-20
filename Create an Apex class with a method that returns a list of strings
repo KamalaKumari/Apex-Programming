@@ -7,7 +7,9 @@ You can also use an array if you prefer, but these instructions assume you’re 
          --The method must return a list of strings. Each element in the list must have the format Test n, where n is the index of the current string in the list. For example, if the input is 3, then the output should be ['Test 0', 'Test 1', 'Test 2']. 
            Remember that in Apex, the index position of the first element in a list is always 0. --Apex Basics & Database*/
            
-           
+
+Method 1:
+
 public class StringArrayTest {
     public static List<String> generateStringArray(Integer length){
         List<String> Arraylist = new List<String>();
@@ -20,3 +22,26 @@ public class StringArrayTest {
         return Arraylist;
     }
 }
+
+Output:
+
+In Anonymous window type, StringArrayTest.generateStringArray(5)
+Type 0,Type 1,Type 2,Type 3,Type 4
+
+
+Method 2:
+
+public class StringArrayTest {
+    public static List<String> generateStringArray(Integer Length){
+        List<String> Arraylist=new List<String>();
+        for(Integer i=0;i<Length;i++){
+           Arraylist.add('Test '+i);
+        }
+    return Arraylist;
+    }
+}
+
+Output for Method 2:
+
+In Anonymous window type, List<String> myoutput=StringArrayTest.generateStringArray(5)
+Type 0,Type 1,Type 2,Type 3,Type 4
