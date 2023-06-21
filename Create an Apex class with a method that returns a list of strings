@@ -25,7 +25,7 @@ public class StringArrayTest {
 
 Output:
 
-In Anonymous window type, StringArrayTest.generateStringArray(5)
+In Anonymous window, type - StringArrayTest.generateStringArray(5)
 Type 0,Type 1,Type 2,Type 3,Type 4
 
 
@@ -43,5 +43,24 @@ public class StringArrayTest {
 
 Output for Method 2:
 
-In Anonymous window type, List<String> myoutput=StringArrayTest.generateStringArray(5)
+In Anonymous window, type- List<String> myoutput=StringArrayTest.generateStringArray(5)
+                           System.debug(myoutput);
+Type 0,Type 1,Type 2,Type 3,Type 4
+
+
+Method 3:
+
+public class StringArrayTest {
+    public static List<String> generateStringArray(Integer Length){
+        List<String> Arraylist=new List<String>();
+        for(Integer i=0;i<Length;i++){
+           Arraylist.add('Test '+i);
+        }
+    System.debug(Arraylist);
+    return Arraylist;
+    }
+}
+
+Output:
+In Anonymous window, type - StringArrayTest.generateStringArray(5)
 Type 0,Type 1,Type 2,Type 3,Type 4
