@@ -1,0 +1,11 @@
+Data Manipulation Language in Apex:
+
+-- insert new records
+-- update existing records
+-- delete records
+-- upsert records (update, insert)
+
+Example:
+
+List<Account> ls=new List<Account>();
+Account acc=new Account();
