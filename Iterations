@@ -1,0 +1,26 @@
+#Do-while Loop
+________________________
+integer count = 1;
+do{
+   System.debug(count);
+   count++;
+} while(count<11);
+System.debug('loop is over');
+
+#while loop
+________________________
+integer count = 1;
+while(count<11){
+   System.debug(count);
+   count++;
+}
+System.debug('loop is over');
+
+#For loop
+________________________
+integer K=5;
+for(K<10){
+     K++;
+     System.debug(K);
+}
+
