@@ -1,0 +1,65 @@
+Lists
+_______
+A list is an ordered collection of elements that are distinguished by their indices.
+
+List elements can be of any data type -- primitive types, collections, sObjects, user-defined types, and built-in Apex types.
+
+---> Example:
+List<String> myName=new List<String>();
+myName.add('kamala');
+myName.add('sahasra');
+myName.add('chintala');
+myName.add('kamala');
+System.debug(myName[0]);
+System.debug(myName.get(2));
+System.debug(myName.size());
+System.debug(myName);
+
+Output:
+[5]|DEBUG|kamala
+[6]|DEBUG|chintala
+[7]|DEBUG|3
+[8]|DEBUG|(kamala, sahasra, chintala, kamala)
+
+
+Sets
+__________
+A set is an unordered collection of elements that do not contain any duplicates.
+A set is a collection of unique, unordered elements.
+
+---Example:
+Set<String> myName=new Set<String>();
+myName.add('kamala');
+myName.add('sahasra');
+myName.add('chintala');
+myName.add('kamala');
+System.debug(myName.size());
+System.debug(myName);
+boolean result=myName.contains('kumari');
+System.debug(result);
+
+Output:
+[6]|DEBUG|3
+[7]|DEBUG|{chintala, kamala, sahasra}
+[8]|DEBUG|false
+
+
+Maps:
+_____________
+Map is a collection of key-value pairs where each unique key maps to a single value.
+
+Use a maps when you want to quickly find something by a key.
+
+---Example:
+Map<integer,string> myMap = new Map<integer,string>();
+myMap.put(1,'a');
+myMap.put(2,'b');
+myMap.put(3,'c');
+System.debug(myMap);
+System.debug(myMap.size());
+System.debug(myMap.get(3));
+
+Output:
+[5]|DEBUG|{1=a, 2=b, 3=c}
+[6]|DEBUG|3
+[7]|DEBUG|c
